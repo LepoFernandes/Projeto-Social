@@ -14,7 +14,9 @@ html, body{
 }
 
 body{
-    background: url('../imagens/podio-redondo-de-luz-vermelha-e-fundo-preto-para-simulacao.jpg') no-repeat top center;
+    min-height: 100vh;
+    background: url('../imagens/podio-redondo-de-luz-vermelha-e-fundo-preto-para-simulacao.jpg') no-repeat;
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -22,9 +24,11 @@ body{
 main{
     height: 100vh;
     position: relative;
+
 }
 
 section#telefone{
+    margin-top: 50px;
     height: 627px;
     width: 311px;
     position: absolute;
@@ -35,6 +39,7 @@ section#telefone{
 }
 
 iframe#tela{
+  
     position: relative;
     top: 80px;
     left: 22px;
@@ -42,8 +47,9 @@ iframe#tela{
     height: 471px;
 }
 section#redes-sociais{
-    text-align: top;
-    gap: 30px;
+    display: flex;
+ 
+   
 }
 section#redes-sociais img:hover{
     border: 2px solid rgba(255, 255, 255, 0.63);
@@ -61,5 +67,6 @@ section#redes-sociais img{
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    top: 100%;
 }
 }
